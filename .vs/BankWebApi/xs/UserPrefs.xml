@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{40553B42-C0B3-4BDC-94E6-A50CCD2FE1A5}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BankWebApi/Controllers/UserController.cs">
+    <Files>
+      <File FileName="BankWebApi/Controllers/UserController.cs" Line="50" Column="10" />
+      <File FileName="BankWebApi/Startup.cs" />
+      <File FileName="BankWebApi/Handler/BasicAuthenticationHandler.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BankWebApi" expanded="True">
+            <Node name="BankWebApi" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="UserController.cs" selected="True" />
+              </Node>
+              <Node name="Handler" expanded="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.BankWebApi PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
