@@ -13,7 +13,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace BankWebApi.Controllers
 {
-    [Authorize]
+   
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : Controller
@@ -31,7 +31,6 @@ namespace BankWebApi.Controllers
             string username = HttpContext.User.Identity.Name;
             var user = await _context.Users.Where(user => user.Username == username).FirstOrDefaultAsync();
 
-            user.password = null;
             if(user == null)
             {
                 return NotFound();
@@ -41,34 +40,23 @@ namespace BankWebApi.Controllers
 
         }
         [HttpPost("EnterUser")]
-        public ActionResult EnterUser(User p)
+        public ActionResult EnterUser(User user)
         {
-            _context.Users.Add(p);
+            _context.Users.Add(user);
             _context.SaveChanges();
             return NoContent();
 
         }
-
-        [HttpPut("UpdateAmount/{cmd}/{a}")]
-        public async Task<ActionResult<User>> UpdateAmount(int a, string cmd)
+        [HttpDelete("{Id}")]
+        public ActionResult<User> DeleteUser(int id)
         {
-            string username = HttpContext.User.Identity.Name;
-
-            var per = await _context.Users.Where(i => i.Username == username).FirstOrDefaultAsync();
-            if (cmd == "deposit")
-            {
-                per.Balance += a;
-
-            }
-            if (cmd == "withdraw")
-            {
-                per.Balance -= a;
-            }
+            var user = _context.Users.Where(u => u.Id == id).FirstOrDefault();
+            _context.Remove(user);
             _context.SaveChanges();
             return NoContent();
-
         }
 
+      
 
     }
 }

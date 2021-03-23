@@ -8653,7 +8653,7 @@
       "outputPath": "/Users/newmac/Projects/BankWebApi/BankWebApi/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/newmac/.config/NuGet/NuGet.Config"
+        "/Users/newmac/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
