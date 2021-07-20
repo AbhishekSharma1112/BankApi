@@ -1,27 +1,54 @@
-﻿<Properties StartupConfiguration="{40553B42-C0B3-4BDC-94E6-A50CCD2FE1A5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BankWebApi/Controllers/UserController.cs">
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{40553B42-C0B3-4BDC-94E6-A50CCD2FE1A5}|Default">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="BankWebApi/Controllers/UserController.cs" Line="50" Column="10" />
-      <File FileName="BankWebApi/Startup.cs" />
-      <File FileName="BankWebApi/Handler/BasicAuthenticationHandler.cs" />
+      <File FileName="BankApiTests/UnitTest1.cs" Line="17" Column="1" />
+      <File FileName="BankApi.IntegrationTest/IntegrationTest.cs" />
+      <File FileName="BankApi.IntegrationTest/TestServerProvider.cs" />
+      <File FileName="BankWebApi/Controllers/UserController.cs" />
+      <File FileName="BankApi.IntegrationTest/Shared Data/UserRepositoryMocker.cs" Line="11" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="BankWebApi" expanded="True">
+          <Node name="BankWebApi" expanded="True" selected="True">
+            <Node name="BankApi.IntegrationTest" expanded="True">
+              <Node name="Shared Data" expanded="True" />
+            </Node>
+            <Node name="BankApiTests" expanded="True" />
             <Node name="BankWebApi" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="UserController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Handler" expanded="True" />
               <Node name="Properties" expanded="True" />
             </Node>
+            <Node name="BankWebApiModels" expanded="True">
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
+            </Node>
+            <Node name="BankWebApiRepository" expanded="True">
+              <Node name="Repository" expanded="True">
+                <Node name="Abstract" expanded="True" />
+                <Node name="Concrete" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="BankWebApiServices" expanded="True">
+              <Node name="Services" expanded="True">
+                <Node name="Abstract" expanded="True" />
+                <Node name="Concrete" expanded="True" />
+              </Node>
+            </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="BankWebApi" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.BankWebApi PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.ItemProperties.BankWebApiModels PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.ItemProperties.BankWebApiServices PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -6,9 +6,7 @@
 
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
     <Folder Include="Handler\" />
-    <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
@@ -22,5 +20,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Controllers\EmptyClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BankWebApiServices\BankWebApiServices.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\BankWebApiModels\BankWebApiModels.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 </Project>

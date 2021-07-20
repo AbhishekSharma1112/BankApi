@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using BankWebApi.Data;
+using BankWebApiModels.Data;
 using BankWebApi.Handler;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
@@ -12,6 +12,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using BankWebApiRepository.Repository.Abstract;
+using BankWebApiRepository.Repository.Concrete;
+using BankWebApiServices.Services.Abstract;
+using BankWebApiServices.Services.Concrete;
 
 namespace BankWebApi
 {
@@ -33,11 +37,15 @@ namespace BankWebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            
+
+            services.AddTransient<IUserRepository, UserRepository>();
+            services.AddTransient<ITransactionRepository, TransactionRepository>();
+            services.AddTransient<IUserServices, UserServices>();
+            services.AddTransient<ITransactionServices, TransactionServices>();
 
             services.AddAuthentication("BasicAuthentication").AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);
 
-            services.AddDbContextPool<UserContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<UserContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddControllers();
             services.AddRazorPages();
         }

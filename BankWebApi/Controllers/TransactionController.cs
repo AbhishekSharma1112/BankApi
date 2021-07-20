@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Transactions;
-using BankWebApi.Data;
-using BankWebApi.Models;
+using BankWebApiModels.Data;
+using BankWebApiModels.Models;
+using BankWebApiServices.Services.Abstract;
+using BankWebApiServices.Services.Concrete;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -16,11 +18,16 @@ namespace BankWebApi.Controllers
     [ApiController]
     public class TransactionController : Controller
     {
-        private readonly UserContext _context;
+        private readonly ITransactionServices _transaction;
+        private readonly IUserServices _userServices;
+        private readonly UserContext _userContext;
 
-    public TransactionController(UserContext context)
+        public TransactionController(ITransactionServices transaction, IUserServices userServices,UserContext userContext)
     {
-        _context = context;
+        _transaction = transaction;
+            _userServices = userServices;
+            _userContext = userContext;
+
     }
 
        
@@ -30,7 +37,7 @@ namespace BankWebApi.Controllers
         
             string username = HttpContext.User.Identity.Name;
 
-            var user = await _context.Users.Where(i => i.Username == username).FirstOrDefaultAsync();
+            var user = await _userServices.GetUser(username);
 
             if (user == null)
             {
@@ -46,13 +53,11 @@ namespace BankWebApi.Controllers
 
             };
 
-            _context.Transactions.Add(transaction);
+           await _transaction.AddTransactions(transaction);
 
-            AppLogic logic = new AppLogic();
-            user.Balance = logic.Update_Amount(amount,user.Balance, transtype);
-           
+            user.Balance = _transaction.UpdateAmount(amount, user.Balance, transtype);
+            _userContext.SaveChanges();
 
-            _context.SaveChanges();
             return NoContent() ;
 
         }
