@@ -3,6 +3,8 @@ using System.Net.Http;
 using BankWebApi;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace BankApi.IntegrationTest
 {
@@ -13,9 +15,12 @@ namespace BankApi.IntegrationTest
 
         public HttpClient Client { get; private set; }
 
-        public TestServerProvider()
+        public TestServerProvider(Action<IServiceCollection> testServicesAction = null)
         {
-            server = new TestServer(new WebHostBuilder().UseStartup<Startup>());
+            var webHostBuilder = new WebHostBuilder().UseConfiguration(new ConfigurationBuilder().AddJsonFile("appsettings.json").Build()).UseStartup<Startup>()
+               .ConfigureTestServices(testServicesAction ?? (collection => { }));
+
+            server = new TestServer(webHostBuilder);
 
             Client = server.CreateClient();
         }

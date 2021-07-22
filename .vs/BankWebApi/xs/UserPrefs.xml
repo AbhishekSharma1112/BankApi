@@ -1,20 +1,24 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{40553B42-C0B3-4BDC-94E6-A50CCD2FE1A5}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="BankApi.IntegrationTest/Shared Data/UserRepositoryMocker.cs">
     <Files>
-      <File FileName="BankApiTests/UnitTest1.cs" Line="17" Column="1" />
-      <File FileName="BankApi.IntegrationTest/IntegrationTest.cs" />
-      <File FileName="BankApi.IntegrationTest/TestServerProvider.cs" />
-      <File FileName="BankWebApi/Controllers/UserController.cs" />
-      <File FileName="BankApi.IntegrationTest/Shared Data/UserRepositoryMocker.cs" Line="11" Column="1" />
+      <File FileName="BankWebApi/Controllers/UserController.cs" Line="27" Column="56" />
+      <File FileName="BankApi.IntegrationTest/Shared Data/UserRepositoryMocker.cs" Line="34" Column="1" />
+      <File FileName="BankWebApiModels/Data/UserContext.cs" />
+      <File FileName="BankApi.IntegrationTest/UserControllerIntegrationTest.cs" />
+      <File FileName="BankWebApiServices/Services/Concrete/UserServices.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="BankWebApi" expanded="True" selected="True">
+          <Node name="BankWebApi" expanded="True">
             <Node name="BankApi.IntegrationTest" expanded="True">
-              <Node name="Shared Data" expanded="True" />
+              <Node name="Shared Data" expanded="True">
+                <Node name="UserRepositoryMocker.cs" selected="True" />
+              </Node>
             </Node>
-            <Node name="BankApiTests" expanded="True" />
+            <Node name="BankApiTests" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+            </Node>
             <Node name="BankWebApi" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Handler" expanded="True" />

@@ -241,3 +241,5 @@
 /Users/newmac/Projects/BankWebApi/BankApi.IntegrationTest/obj/Debug/netcoreapp3.1/BankApi.IntegrationTest.dll
 /Users/newmac/Projects/BankWebApi/BankApi.IntegrationTest/obj/Debug/netcoreapp3.1/BankApi.IntegrationTest.pdb
 /Users/newmac/Projects/BankWebApi/BankApi.IntegrationTest/obj/Debug/netcoreapp3.1/BankApi.IntegrationTest.genruntimeconfig.cache
+/Users/newmac/Projects/BankWebApi/BankApi.IntegrationTest/bin/Debug/netcoreapp3.1/Castle.Core.dll
+/Users/newmac/Projects/BankWebApi/BankApi.IntegrationTest/bin/Debug/netcoreapp3.1/FakeItEasy.dll

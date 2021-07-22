@@ -25,14 +25,16 @@ namespace BankWebApi.Controllers
         public async Task<ActionResult<User>> GetUser(string username)
         {
             var user = _userServices.GetUser(username);
-           
 
-            if(user == null)
+
+            if (user == null)
             {
                 return NotFound();
             }
-
-            return await user;
+            
+            
+                return await user;
+            
 
         }
         [HttpPost("EnterUser")]

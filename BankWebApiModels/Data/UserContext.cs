@@ -11,7 +11,7 @@ namespace BankWebApiModels.Data
 
         }
      
-        public DbSet<User>  Users { get; set; }
+        public virtual  DbSet<User>  Users { get; set; }
         public DbSet<Transactions> Transactions { get; set; }
 
     }

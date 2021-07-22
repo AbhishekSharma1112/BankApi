@@ -11,12 +11,14 @@
     <PackageReference Include="xunit" Version="2.4.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
     <PackageReference Include="coverlet.collector" Version="1.2.0" />
-    <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="2.0.1" />
+    <PackageReference Include="FakeItEasy" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="3.0.2" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="Microsoft.AspNetCore.TestHost" />
     <None Remove="Shared Datta\" />
+    <None Remove="FakeItEasy" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BankWebApi\BankWebApi.csproj" />

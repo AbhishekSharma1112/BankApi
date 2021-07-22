@@ -42,9 +42,13 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "FakeItEasy": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.AspNetCore.TestHost": {
               "target": "Package",
-              "version": "[2.0.1, )"
+              "version": "[3.0.2, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
