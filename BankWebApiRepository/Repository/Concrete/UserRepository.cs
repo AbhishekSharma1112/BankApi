@@ -37,9 +37,9 @@ namespace BankWebApiRepository.Repository.Concrete
             return users ;
         }
 
-        public async Task<User> GetUser(String username)
+        public async Task<User> GetUser(int id)
         {
-            var user = await _usercontext.Users.Where(user => user.Username == username).FirstOrDefaultAsync();
+            var user = await _usercontext.Users.Where(user => user.Id == id).FirstOrDefaultAsync();
             return user;
         }
         static void Main()

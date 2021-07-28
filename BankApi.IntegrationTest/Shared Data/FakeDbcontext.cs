@@ -19,9 +19,10 @@ namespace BankApi.IntegrationTest.SharedData
         {
             IQueryable<TEntity> fakeIQueryable = data.AsQueryable();
             var fakeDbSet = A.Fake<DbSet<TEntity>>((d => d.Implements(typeof(IQueryable<TEntity>)).Implements<IAsyncEnumerable<TEntity>>()));
-            A.CallTo(() => ((IAsyncEnumerable<TEntity>)fakeDbSet).GetAsyncEnumerator(CancellationToken.None)).Returns(new TestAsyncEnumerator<TEntity>(fakeIQueryable.GetEnumerator()));
-            //
-            A.CallTo(() => ((IQueryable<TEntity>)fakeDbSet).Provider).Returns(new TestAsyncQueryProvider<TEntity>(fakeIQueryable.Provider));
+            //A.CallTo(() => ((IAsyncEnumerable<TEntity>)fakeDbSet).GetAsyncEnumerator(CancellationToken.None)).Returns(new TestAsyncEnumerator<TEntity>(fakeIQueryable.GetEnumerator()));
+            // A.CallTo(() => ((IQueryable<TEntity>)fakeDbSet).Provider).Returns(new TestAsyncQueryProvider<TEntity>(fakeIQueryable.Provider));
+            A.CallTo(() => ((IQueryable<TEntity>)fakeDbSet).GetEnumerator()).Returns(fakeIQueryable.GetEnumerator());
+            A.CallTo(() => ((IQueryable<TEntity>)fakeDbSet).Provider).Returns( fakeIQueryable.Provider);
             A.CallTo(() => ((IQueryable<TEntity>)fakeDbSet).Expression).Returns(fakeIQueryable.Expression);
             A.CallTo(() => ((IQueryable<TEntity>)fakeDbSet).ElementType).Returns(fakeIQueryable.ElementType);
             A.CallTo(() => ((IQueryable<TEntity>)fakeDbSet).GetEnumerator()).Returns(fakeIQueryable.GetEnumerator());

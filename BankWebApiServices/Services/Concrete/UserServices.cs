@@ -27,9 +27,9 @@ namespace BankWebApiServices.Services.Concrete
             return users;
         }
 
-        public async  Task<User> GetUser(string username)
+        public async  Task<User> GetUser(int id)
         {
-           var user = await _userrepository.GetUser(username);
+           var user = await _userrepository.GetUser(id);
             return user;
         }
         static void Main()

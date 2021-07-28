@@ -21,19 +21,19 @@ namespace BankWebApi.Controllers
             _userServices = userServices;
         }
 
-        [HttpGet ("GetUser/{username}")]
-        public async Task<ActionResult<User>> GetUser(string username)
+        [HttpGet("GetUserData")]
+        public async Task<IActionResult> GetUser([FromQuery]int id)
         {
-            var user = _userServices.GetUser(username);
+            var user = await  _userServices.GetUser(id);
 
 
-            if (user == null)
+           /* if (user == null)
             {
                 return NotFound();
-            }
-            
-            
-                return await user;
+            }*/
+
+
+            return Ok(user);
             
 
         }

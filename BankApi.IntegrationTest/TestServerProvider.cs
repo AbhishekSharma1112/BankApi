@@ -11,9 +11,9 @@ namespace BankApi.IntegrationTest
     public class TestServerProvider
     {
 
-        private TestServer server;
+        private readonly TestServer server;
 
-        public HttpClient Client { get; private set; }
+        public HttpClient Client { get;}
 
         public TestServerProvider(Action<IServiceCollection> testServicesAction = null)
         {

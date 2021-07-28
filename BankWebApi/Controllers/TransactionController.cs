@@ -32,18 +32,16 @@ namespace BankWebApi.Controllers
 
        
     [HttpPut("UpdateAmount/{transtype}/{amount}")]
-        public async Task<ActionResult<Transaction>> UpdateAmount(double amount, string transtype)
+        public async Task<ActionResult<Transaction>> UpdateAmount(int id ,double amount, string transtype)
         { 
         
-            string username = HttpContext.User.Identity.Name;
 
-            var user = await _userServices.GetUser(username);
+            var user = await _userServices.GetUser(id);
 
             if (user == null)
             {
                 return NotFound();
             }
-            int id = user.Id;
             Transactions transaction = new Transactions
             {
                 ID = id,

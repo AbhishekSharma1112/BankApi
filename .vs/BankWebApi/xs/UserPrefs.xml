@@ -1,42 +1,33 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{40553B42-C0B3-4BDC-94E6-A50CCD2FE1A5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BankApi.IntegrationTest/Shared Data/UserRepositoryMocker.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BankWebApi.AcceptanceTest/Feature/GetUserAssertOk.feature.cs">
     <Files>
-      <File FileName="BankWebApi/Controllers/UserController.cs" Line="27" Column="56" />
-      <File FileName="BankApi.IntegrationTest/Shared Data/UserRepositoryMocker.cs" Line="34" Column="1" />
-      <File FileName="BankWebApiModels/Data/UserContext.cs" />
-      <File FileName="BankApi.IntegrationTest/UserControllerIntegrationTest.cs" />
-      <File FileName="BankWebApiServices/Services/Concrete/UserServices.cs" />
+      <File FileName="BankWebApi.AcceptanceTest/Steps/GetUserAssertOk.cs" Line="29" Column="72" />
+      <File FileName="BankWebApi.AcceptanceTest/Feature/GetUserAssertOk.feature" Line="12" Column="1" />
+      <File FileName="BankWebApi.AcceptanceTest/Feature/GetUserAssertOk.feature.cs" Line="87" Column="28" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BankWebApi" expanded="True">
             <Node name="BankApi.IntegrationTest" expanded="True">
-              <Node name="Shared Data" expanded="True">
-                <Node name="UserRepositoryMocker.cs" selected="True" />
-              </Node>
-            </Node>
-            <Node name="BankApiTests" expanded="True">
-              <Node name="Dependencies" expanded="True" />
+              <Node name="Shared Data" expanded="True" />
             </Node>
             <Node name="BankWebApi" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Handler" expanded="True" />
-              <Node name="Properties" expanded="True" />
             </Node>
-            <Node name="BankWebApiModels" expanded="True">
-              <Node name="Data" expanded="True" />
-              <Node name="Models" expanded="True" />
+            <Node name="BankWebApi.AcceptanceTest" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Steps" expanded="True">
+                <Node name="GetUserAssertOkSteps.cs" selected="True" />
+              </Node>
             </Node>
             <Node name="BankWebApiRepository" expanded="True">
               <Node name="Repository" expanded="True">
-                <Node name="Abstract" expanded="True" />
                 <Node name="Concrete" expanded="True" />
               </Node>
             </Node>
             <Node name="BankWebApiServices" expanded="True">
               <Node name="Services" expanded="True">
-                <Node name="Abstract" expanded="True" />
                 <Node name="Concrete" expanded="True" />
               </Node>
             </Node>
@@ -45,7 +36,9 @@
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="BankWebApi" expanded="True" selected="True" />
+          <Node name="BankWebApi" expanded="True">
+            <Node name="BankWebApi.AcceptanceTest" selected="True" />
+          </Node>
         </State>
       </Pad>
     </Pads>
@@ -56,7 +49,10 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/newmac/Projects/BankWebApi/BankWebApi/Controllers/UserController.cs" relfile="BankWebApi/Controllers/UserController.cs" line="26" column="1" />
+      <Breakpoint file="/Users/newmac/Projects/BankWebApi/BankApi.IntegrationTest/UserControllerIntegrationTest.cs" relfile="BankApi.IntegrationTest/UserControllerIntegrationTest.cs" line="52" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

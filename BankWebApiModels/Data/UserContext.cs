@@ -6,7 +6,7 @@ namespace BankWebApiModels.Data
 {
     public class UserContext : DbContext
     {
-        public UserContext(DbContextOptions<UserContext> options):base(options)
+        public UserContext(DbContextOptions options):base(options)
         {
 
         }
@@ -14,7 +14,14 @@ namespace BankWebApiModels.Data
         public virtual  DbSet<User>  Users { get; set; }
         public DbSet<Transactions> Transactions { get; set; }
 
+
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<User>()
+                .HasKey(c => new { c.Id });
+        }
     }
 
-    
+
 }
