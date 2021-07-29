@@ -8,25 +8,30 @@ using Xunit;
 namespace BankWebApi.AcceptanceTest.Steps
 {
     [Binding]
-    public class GetUserAssertOk
+    public class GetUserAssertOkSteps
+
     {
+        private readonly int Id= 1;
 
-        HttpResponseMessage ResponseMessage;
-        HttpClient client = new HttpClient();
+         HttpResponseMessage Response { get;  set; }
 
-        [When("I make a Get request to '(.*)' ")]
-        public async Task WhenImakeaGetRequestAsync(string endpoint)
+        [When(@"I perfom get request for  user with id ""(.*)""")]
+        public async Task WhenIPerfomGetRequestForUserWithIdAsync()
         {
-            client.BaseAddress = new Uri("https://localhost:5001/");
-            ResponseMessage = await client.GetAsync("api/User/GetUserData/1");
-           
+            var httpClient = new HttpClient();
+            httpClient.BaseAddress = new Uri("http://localhost:5001/api/User/");
+            Response = await httpClient.GetAsync("GetUserData?id=" + Id);
+
+
         }
 
-        [Then("the response status code is '(.*)'")]
-        public void ThenresponseshouldbeOk(int statuscode)
+        [Then(@"response status is '(.*)'")]
+        public void ThenResponseStatusIs(int statuscode)
         {
-            var expectedResponse = (HttpStatusCode)statuscode;
-            Assert.Equal(expectedResponse, ResponseMessage.StatusCode);
+            var expectedstatus = (HttpStatusCode)statuscode;
+            Assert.Equal(expectedstatus, Response.StatusCode);
+
+           
         }
     }
 }

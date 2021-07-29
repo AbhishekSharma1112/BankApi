@@ -27,10 +27,10 @@ namespace BankWebApi.Controllers
             var user = await  _userServices.GetUser(id);
 
 
-           /* if (user == null)
+            if (user == null)
             {
                 return NotFound();
-            }*/
+            }
 
 
             return Ok(user);

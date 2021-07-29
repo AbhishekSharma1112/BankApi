@@ -1,6 +1,7 @@
 ﻿using System;
 using BankWebApiModels.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
 
 namespace BankWebApiModels.Data
 {
@@ -20,6 +21,18 @@ namespace BankWebApiModels.Data
         {
             modelBuilder.Entity<User>()
                 .HasKey(c => new { c.Id });
+        }
+        public class YourDbContextFactory : IDesignTimeDbContextFactory<UserContext>
+        {
+            public UserContext CreateDbContext(string[] args)
+            {
+                var optionsBuilder = new DbContextOptionsBuilder<UserContext>();
+                optionsBuilder.UseSqlServer("ConnectionStrings: DefaultConnection");
+
+                return new UserContext(optionsBuilder.Options);
+            }
+
+            
         }
     }
 

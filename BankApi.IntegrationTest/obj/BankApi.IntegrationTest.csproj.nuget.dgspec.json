@@ -1,33 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "/Users/newmac/Projects/BankWebApi/BankApi.IntegrationTest/BankApi.IntegrationTest.csproj": {}
+    "C:\\Projects\\BankApi\\BankApi.IntegrationTest\\BankApi.IntegrationTest.csproj": {}
   },
   "projects": {
-    "/Users/newmac/Projects/BankWebApi/BankApi.IntegrationTest/BankApi.IntegrationTest.csproj": {
+    "C:\\Projects\\BankApi\\BankApi.IntegrationTest\\BankApi.IntegrationTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/newmac/Projects/BankWebApi/BankApi.IntegrationTest/BankApi.IntegrationTest.csproj",
+        "projectUniqueName": "C:\\Projects\\BankApi\\BankApi.IntegrationTest\\BankApi.IntegrationTest.csproj",
         "projectName": "BankApi.IntegrationTest",
-        "projectPath": "/Users/newmac/Projects/BankWebApi/BankApi.IntegrationTest/BankApi.IntegrationTest.csproj",
-        "packagesPath": "/Users/newmac/.nuget/packages/",
-        "outputPath": "/Users/newmac/Projects/BankWebApi/BankApi.IntegrationTest/obj/",
+        "projectPath": "C:\\Projects\\BankApi\\BankApi.IntegrationTest\\BankApi.IntegrationTest.csproj",
+        "packagesPath": "C:\\Users\\as\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\BankApi\\BankApi.IntegrationTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/newmac/.config/NuGet/NuGet.Config"
+          "C:\\Users\\as\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "/Users/newmac/Projects/BankWebApi/BankWebApi/BankWebApi.csproj": {
-                "projectPath": "/Users/newmac/Projects/BankWebApi/BankWebApi/BankWebApi.csproj"
+              "C:\\Projects\\BankApi\\BankWebApi\\BankWebApi.csproj": {
+                "projectPath": "C:\\Projects\\BankApi\\BankWebApi\\BankWebApi.csproj"
               }
             }
           }
@@ -82,37 +84,230 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/newmac/Projects/BankWebApi/BankWebApi/BankWebApi.csproj": {
+    "C:\\Projects\\BankApi\\BankWebApiModels\\BankWebApiModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/newmac/Projects/BankWebApi/BankWebApi/BankWebApi.csproj",
-        "projectName": "BankWebApi",
-        "projectPath": "/Users/newmac/Projects/BankWebApi/BankWebApi/BankWebApi.csproj",
-        "packagesPath": "/Users/newmac/.nuget/packages/",
-        "outputPath": "/Users/newmac/Projects/BankWebApi/BankWebApi/obj/",
+        "projectUniqueName": "C:\\Projects\\BankApi\\BankWebApiModels\\BankWebApiModels.csproj",
+        "projectName": "BankWebApiModels",
+        "projectPath": "C:\\Projects\\BankApi\\BankWebApiModels\\BankWebApiModels.csproj",
+        "packagesPath": "C:\\Users\\as\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\BankApi\\BankWebApiModels\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/newmac/.config/NuGet/NuGet.Config"
+          "C:\\Users\\as\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\BankApi\\BankWebApiRepository\\BankWebApiRepository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\BankApi\\BankWebApiRepository\\BankWebApiRepository.csproj",
+        "projectName": "BankWebApiRepository",
+        "projectPath": "C:\\Projects\\BankApi\\BankWebApiRepository\\BankWebApiRepository.csproj",
+        "packagesPath": "C:\\Users\\as\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\BankApi\\BankWebApiRepository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\as\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "/Users/newmac/Projects/BankWebApi/BankWebApiModels/BankWebApiModels.csproj": {
-                "projectPath": "/Users/newmac/Projects/BankWebApi/BankWebApiModels/BankWebApiModels.csproj"
+              "C:\\Projects\\BankApi\\BankWebApiModels\\BankWebApiModels.csproj": {
+                "projectPath": "C:\\Projects\\BankApi\\BankWebApiModels\\BankWebApiModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\BankApi\\BankWebApiServices\\BankWebApiServices.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\BankApi\\BankWebApiServices\\BankWebApiServices.csproj",
+        "projectName": "BankWebApiServices",
+        "projectPath": "C:\\Projects\\BankApi\\BankWebApiServices\\BankWebApiServices.csproj",
+        "packagesPath": "C:\\Users\\as\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\BankApi\\BankWebApiServices\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\as\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Projects\\BankApi\\BankWebApiRepository\\BankWebApiRepository.csproj": {
+                "projectPath": "C:\\Projects\\BankApi\\BankWebApiRepository\\BankWebApiRepository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\BankApi\\BankWebApi\\BankWebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\BankApi\\BankWebApi\\BankWebApi.csproj",
+        "projectName": "BankWebApi",
+        "projectPath": "C:\\Projects\\BankApi\\BankWebApi\\BankWebApi.csproj",
+        "packagesPath": "C:\\Users\\as\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\BankApi\\BankWebApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\as\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Projects\\BankApi\\BankWebApiModels\\BankWebApiModels.csproj": {
+                "projectPath": "C:\\Projects\\BankApi\\BankWebApiModels\\BankWebApiModels.csproj"
               },
-              "/Users/newmac/Projects/BankWebApi/BankWebApiServices/BankWebApiServices.csproj": {
-                "projectPath": "/Users/newmac/Projects/BankWebApi/BankWebApiServices/BankWebApiServices.csproj"
+              "C:\\Projects\\BankApi\\BankWebApiServices\\BankWebApiServices.csproj": {
+                "projectPath": "C:\\Projects\\BankApi\\BankWebApiServices\\BankWebApiServices.csproj"
               }
             }
           }
@@ -168,192 +363,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/Users/newmac/Projects/BankWebApi/BankWebApiModels/BankWebApiModels.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/newmac/Projects/BankWebApi/BankWebApiModels/BankWebApiModels.csproj",
-        "projectName": "BankWebApiModels",
-        "projectPath": "/Users/newmac/Projects/BankWebApi/BankWebApiModels/BankWebApiModels.csproj",
-        "packagesPath": "/Users/newmac/.nuget/packages/",
-        "outputPath": "/Users/newmac/Projects/BankWebApi/BankWebApiModels/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/Users/newmac/.config/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[3.1.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.1.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/Users/newmac/Projects/BankWebApi/BankWebApiRepository/BankWebApiRepository.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/newmac/Projects/BankWebApi/BankWebApiRepository/BankWebApiRepository.csproj",
-        "projectName": "BankWebApiRepository",
-        "projectPath": "/Users/newmac/Projects/BankWebApi/BankWebApiRepository/BankWebApiRepository.csproj",
-        "packagesPath": "/Users/newmac/.nuget/packages/",
-        "outputPath": "/Users/newmac/Projects/BankWebApi/BankWebApiRepository/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/Users/newmac/.config/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
-            "projectReferences": {
-              "/Users/newmac/Projects/BankWebApi/BankWebApiModels/BankWebApiModels.csproj": {
-                "projectPath": "/Users/newmac/Projects/BankWebApi/BankWebApiModels/BankWebApiModels.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/Users/newmac/Projects/BankWebApi/BankWebApiServices/BankWebApiServices.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/newmac/Projects/BankWebApi/BankWebApiServices/BankWebApiServices.csproj",
-        "projectName": "BankWebApiServices",
-        "projectPath": "/Users/newmac/Projects/BankWebApi/BankWebApiServices/BankWebApiServices.csproj",
-        "packagesPath": "/Users/newmac/.nuget/packages/",
-        "outputPath": "/Users/newmac/Projects/BankWebApi/BankWebApiServices/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/Users/newmac/.config/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
-            "projectReferences": {
-              "/Users/newmac/Projects/BankWebApi/BankWebApiRepository/BankWebApiRepository.csproj": {
-                "projectPath": "/Users/newmac/Projects/BankWebApi/BankWebApiRepository/BankWebApiRepository.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

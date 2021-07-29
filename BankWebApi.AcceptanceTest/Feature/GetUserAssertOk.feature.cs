@@ -19,7 +19,7 @@ namespace BankWebApi.AcceptanceTest.Feature
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.3.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public partial class GetUserFeature : object, Xunit.IClassFixture<GetUserFeature.FixtureData>, System.IDisposable
+    public partial class GetUserAssertOkFeature : object, Xunit.IClassFixture<GetUserAssertOkFeature.FixtureData>, System.IDisposable
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -31,7 +31,7 @@ namespace BankWebApi.AcceptanceTest.Feature
 #line 1 "GetUserAssertOk.feature"
 #line hidden
         
-        public GetUserFeature(GetUserFeature.FixtureData fixtureData, BankWebApi_AcceptanceTest_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
+        public GetUserAssertOkFeature(GetUserAssertOkFeature.FixtureData fixtureData, BankWebApi_AcceptanceTest_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
         {
             this._testOutputHelper = testOutputHelper;
             this.TestInitialize();
@@ -40,8 +40,7 @@ namespace BankWebApi.AcceptanceTest.Feature
         public static void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "GetUser", "In order to test if BankApi is taking users \nI want the EnterUser call to return " +
-                    "Ok ", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "GetUserAssertOk", "I want request user from bank api \r\nGive result Ok", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -81,16 +80,16 @@ namespace BankWebApi.AcceptanceTest.Feature
             this.TestTearDown();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Validate Response Status")]
-        [Xunit.TraitAttribute("FeatureTitle", "GetUser")]
-        [Xunit.TraitAttribute("Description", "Validate Response Status")]
+        [Xunit.SkippableFactAttribute(DisplayName="Validate GetUser Request")]
+        [Xunit.TraitAttribute("FeatureTitle", "GetUserAssertOk")]
+        [Xunit.TraitAttribute("Description", "Validate GetUser Request")]
         [Xunit.TraitAttribute("Category", "mytag")]
-        public virtual void ValidateResponseStatus()
+        public virtual void ValidateGetUserRequest()
         {
             string[] tagsOfScenario = new string[] {
                     "mytag"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validate Response Status", null, tagsOfScenario, argumentsOfScenario);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validate GetUser Request", null, tagsOfScenario, argumentsOfScenario);
 #line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -112,10 +111,10 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 8
-    testRunner.When("I make a Get request to \"/User/GetUserData/1\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I perfom get request for  user with id \"{id}\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 9
-    testRunner.Then("the response status code is \"200\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("response status is \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -128,12 +127,12 @@ this.ScenarioInitialize(scenarioInfo);
             
             public FixtureData()
             {
-                GetUserFeature.FeatureSetup();
+                GetUserAssertOkFeature.FeatureSetup();
             }
             
             void System.IDisposable.Dispose()
             {
-                GetUserFeature.FeatureTearDown();
+                GetUserAssertOkFeature.FeatureTearDown();
             }
         }
     }

@@ -8,14 +8,13 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="SpecFlow.Assist.Dynamic" Version="1.4.2" />
     <PackageReference Include="xunit" Version="2.4.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
     <PackageReference Include="coverlet.collector" Version="1.2.0" />
     <PackageReference Include="SpecFlow" Version="3.3.57" />
     <PackageReference Include="SpecFlow.xUnit" Version="3.3.57" />
     <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.3.57" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="3.0.3" />
-    <PackageReference Include="Selenium.WebDriver" Version="3.14.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,30 +27,13 @@
     <None Remove="Steps\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Feature\" />
-    <Folder Include="Steps\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BankWebApi\BankWebApi.csproj" />
-  </ItemGroup>
-  <ItemGroup>
     <SpecFlowFeatureFiles Update="Feature\EnterUserAssertOk.feature">
       <Visible>False</Visible>
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>EnterUserAssertOk.feature.cs</LastGenOutput>
     </SpecFlowFeatureFiles>
-    <SpecFlowFeatureFiles Update="Feature\GetUserAssertOk.feature">
-      <Visible>False</Visible>
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>GetUserAssertOk.feature.cs</LastGenOutput>
-    </SpecFlowFeatureFiles>
   </ItemGroup>
   <ItemGroup>
     <SpecFlowObsoleteCodeBehindFiles Remove="Feature\EnterUserAssertOk.feature.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Update="Feature\GetUserAssertOk.feature.cs">
-      <DependentUpon>GetUserAssertOk.feature</DependentUpon>
-    </Compile>
   </ItemGroup>
 </Project>

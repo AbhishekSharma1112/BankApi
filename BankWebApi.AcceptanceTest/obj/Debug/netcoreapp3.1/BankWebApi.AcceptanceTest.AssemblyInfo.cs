@@ -11,10 +11,6 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("BankWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "/Users/newmac/Projects/BankWebApi/BankWebApi", "BankWebApi.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("BankWebApiModels, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "/Users/newmac/Projects/BankWebApi/BankWebApiModels", "BankWebApiModels.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("BankWebApiRepository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "/Users/newmac/Projects/BankWebApi/BankWebApiRepository", "BankWebApiRepository.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("BankWebApiServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "/Users/newmac/Projects/BankWebApi/BankWebApiServices", "BankWebApiServices.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("BankWebApi.AcceptanceTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

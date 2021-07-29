@@ -4946,32 +4946,34 @@
     ]
   },
   "packageFolders": {
-    "/Users/newmac/.nuget/packages/": {}
+    "C:\\Users\\as\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/newmac/Projects/BankWebApi/BankWebApiRepository/BankWebApiRepository.csproj",
+      "projectUniqueName": "C:\\Projects\\BankApi\\BankWebApiRepository\\BankWebApiRepository.csproj",
       "projectName": "BankWebApiRepository",
-      "projectPath": "/Users/newmac/Projects/BankWebApi/BankWebApiRepository/BankWebApiRepository.csproj",
-      "packagesPath": "/Users/newmac/.nuget/packages/",
-      "outputPath": "/Users/newmac/Projects/BankWebApi/BankWebApiRepository/obj/",
+      "projectPath": "C:\\Projects\\BankApi\\BankWebApiRepository\\BankWebApiRepository.csproj",
+      "packagesPath": "C:\\Users\\as\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\BankApi\\BankWebApiRepository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/newmac/.config/NuGet/NuGet.Config"
+        "C:\\Users\\as\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "/Users/newmac/Projects/BankWebApi/BankWebApiModels/BankWebApiModels.csproj": {
-              "projectPath": "/Users/newmac/Projects/BankWebApi/BankWebApiModels/BankWebApiModels.csproj"
+            "C:\\Projects\\BankApi\\BankWebApiModels\\BankWebApiModels.csproj": {
+              "projectPath": "C:\\Projects\\BankApi\\BankWebApiModels\\BankWebApiModels.csproj"
             }
           }
         }
@@ -5003,7 +5005,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
